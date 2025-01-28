@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Todo List</h1>
+  <form action="/" method="POST">
+    <input type="text" name="task" placeholder="Enter task" required>
+    <input type="datetime-local" name="deadline" required>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Deadline</th>
+        <th>Completed</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Example Task 1</td>
+        <td>2025-01-28 12:30 PM</td>
+        <td>
+          <form action="/update" method="POST">
+            <input type="checkbox" checked onchange="this.form.submit()">
+          </form>
+        </td>
+        <td>
+          <a href="/edit">
+            <button>Edit</button>
+          </a>
+          <form action="/delete" method="POST" style="display:inline;">
+            <button type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Example Task 2</td>
+        <td>2025-02-15 10:00 AM</td>
+        <td>
+          <form action="/update" method="POST">
+            <input type="checkbox" onchange="this.form.submit()">
+          </form>
+        </td>
+        <td>
+          <a href="/edit">
+            <button>Edit</button>
+          </a>
+          <form action="/delete" method="POST" style="display:inline;">
+            <button type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

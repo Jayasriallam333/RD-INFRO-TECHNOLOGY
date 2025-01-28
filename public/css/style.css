@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #1A1A1A; /* Dark Gray for background */
+  color: #F5F5F5; /* Light Gray for text */
+}
+
+h1 {
+  color: #FFD700; /* Gold for headings to stand out on the dark background */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #333333; /* Dark Gray for table background */
+  border: 2px solid #FFD700; /* Gold for table borders */
+}
+
+th, td {
+  border: 2px solid #FFD700; /* Gold for table cell borders */
+  padding: 8px;
+  text-align: left;
+  color: #F5F5F5; /* Light Gray for table text */
+}
+
+button {
+  background-color: #FFD700; /* Gold for buttons */
+  color: #1A1A1A; /* Dark Gray for button text */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #FFA500; /* Orange for hover effect */
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5); /* Larger checkboxes */
+  cursor: pointer;
+}
